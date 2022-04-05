@@ -1,3 +1,12 @@
+#### ASG Module ####
+
+module "asg-ms" { 
+  source = "./asg" 
+
+  app                            = var.app
+}
+
+
 #### ASG Resources ####
 
 resource "aws_security_group" "app" {
